@@ -15,5 +15,8 @@
         "ecmaVersion": 2018
     },
     "rules": {
+        "linebreak-style": "off",
+        "indent": ["warn", 4],
+        "no-console": "off"
     }
 }
