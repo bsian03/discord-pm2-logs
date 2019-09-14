@@ -18,7 +18,7 @@
   "author": "Bsian <bsian@staff.libraryofcode.us>",
   "license": "MIT",
   "config": {
-    "name": null,
+    "name": "dpl",
     "webhook": null,
     "rate": 2,
     "queueMax": 100,

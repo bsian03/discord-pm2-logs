@@ -99,4 +99,4 @@ class PM2Listener {
     }
 }
 
-module.exports = new PM2Listener();
+module.exports = PM2Listener;
