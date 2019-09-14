@@ -9,5 +9,29 @@
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2"
+  },
+  "name": "discord-pm2-logs",
+  "version": "0.0.1",
+  "description": "A PM2 module which outputs PM2 logs to Discord",
+  "main": "index.js",
+  "repository": "https://github.com/bsian03/discord-pm2-logs.git",
+  "author": "Bsian <bsian@staff.libraryofcode.us>",
+  "license": "MIT",
+  "config": {
+    "name": null,
+    "webhook": null,
+    "rate": 2,
+    "queueMax": 100,
+    "exception": false,
+    "error": true,
+    "log": true,
+    "kill": false,
+    "restart": false,
+    "delete": false,
+    "stop": false,
+    "restartLimit": false,
+    "exit": false,
+    "start": false,
+    "online": false
   }
 }
