@@ -13,7 +13,7 @@ const config = pmx.initModule();
 class PM2Listener {
     constructor() {
         // Core
-        this.name = config.name || 'dpl';
+        this.name = 'dpl';
         this.webhook = config.webhook;
         this.rate = (config.rate > 0 && config.rate <= 300) ? config.rate : 2;
         this.queueMax = config.queueMax >= 10 ? config.queueMax : 100;
@@ -34,7 +34,7 @@ class PM2Listener {
     /**
      * Start PM2 logging
      */
-    start() {
+    run() {
         if (!config.webhook) {
             console.error('A Webhook URL was not supplied. Please set a webhook URL by running `pm2 set dpl:webhook <url>\nFor information regarding creating webhooks, see https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks');
             pm2.stop(this.name);
@@ -99,4 +99,4 @@ class PM2Listener {
     }
 }
 
-module.exports = PM2Listener;
+module.exports = new PM2Listener();

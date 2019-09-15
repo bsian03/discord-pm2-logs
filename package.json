@@ -10,7 +10,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2"
   },
-  "name": "discord-pm2-logs",
+  "name": "dpl",
   "version": "0.0.1",
   "description": "A PM2 module which outputs PM2 logs to Discord",
   "main": "index.js",
@@ -18,7 +18,6 @@
   "author": "Bsian <bsian@staff.libraryofcode.us>",
   "license": "MIT",
   "config": {
-    "name": "dpl",
     "webhook": null,
     "rate": 2,
     "queueMax": 100,
